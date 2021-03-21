@@ -1,0 +1,26 @@
+﻿<Window x:Class="Drawing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Drawing"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="SlateGray" WindowState="Maximized" Width="1559.421" >
+    <Grid x:Name="myGrid">
+        <InkCanvas x:Name="myInkCanvas" Background="White" Margin="0,100,0,0"/>
+        <Button x:Name="btnRed" Content="Red" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Red" Foreground="Snow" Click="btnRed_Click"/>
+        <Button x:Name="btnBlue" Content="Blue" HorizontalAlignment="Left" Margin="65,45,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Blue" Foreground="Snow" Click="btnBlue_Click"/>
+        <Button x:Name="btnYellow" Content="Yellow" HorizontalAlignment="Left" Margin="120,45,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Yellow" Foreground="Black" Click="btnYellow_Click"/>
+        <Button x:Name="btnBlack" Content="Black" HorizontalAlignment="Left" Margin="175,45,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black" Foreground="Snow" Click="btnBlack_Click"/>
+        <Slider x:Name="sldRed" HorizontalAlignment="Left" Margin="278,25,0,0" VerticalAlignment="Top" Width="255" Minimum="0" Maximum="255" ValueChanged="sld_Color_ValueChanged"/>
+        <Slider x:Name="sldGreen" HorizontalAlignment="Left" Margin="278,48,0,0" VerticalAlignment="Top" Width="255" Minimum="0" Maximum="255" ValueChanged="sld_Color_ValueChanged"/>
+        <Slider x:Name="sldBlue" HorizontalAlignment="Left" Margin="278,71,0,0" VerticalAlignment="Top" Width="255" Minimum="0" Maximum="255" ValueChanged="sld_Color_ValueChanged"/>
+        <Label x:Name="lblCOLOR" Content="COLOR" Foreground="Snow" HorizontalAlignment="Left" Margin="538,45,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnClear" Content="Очистить" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click"/>
+        <Button x:Name="btn_Select" Content="Выделить" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="btn_Select_Click"/>
+        <Button x:Name="btn_AddText" Content="Добавить текст" HorizontalAlignment="Left" Margin="607,69,0,0" VerticalAlignment="Top" Width="105" Click="btn_AddText_Click"/>
+        <Button x:Name="btnRubber" Content="Гумка" HorizontalAlignment="Left" Margin="170,10,0,0" VerticalAlignment="Top" Width="75" Click="btnRubber_Click"/>
+        <Slider x:Name="sldSize" HorizontalAlignment="Left" Margin="607,25,0,0" VerticalAlignment="Top" Width="105" Minimum="1" Maximum="100" ValueChanged="sldSize_ValueChanged"/>
+        <Label Content="Розмір кисті" HorizontalAlignment="Left" Margin="619,4,0,0" VerticalAlignment="Top" Width="151"/>
+    </Grid>
+</Window>
